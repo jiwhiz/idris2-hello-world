@@ -1,0 +1,1 @@
+FROM ghcr.io/joshuanianji/idris-2-docker/devcontainer:latest
