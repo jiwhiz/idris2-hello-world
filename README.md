@@ -25,28 +25,28 @@ Click "Reopen in Container" and it will download the image and open the project 
 Open a new Terminal in VS Code, and you can check the idris2 and idris2-lsp version:
 
 ```
-root ➜ /workspaces/idris2-hello-world (main ✗) $ idris2 --version
-Idris 2, version 0.5.1-a4b99bd81
-root ➜ /workspaces/idris2-hello-world (main ✗) $ idris2-lsp --version
-Idris2 LSP: 0.1.0-0381d6c3d
-Idris2 API: 0.5.1-a4b99bd81
+vscode ➜ /workspaces/idris2-hello-world $ idris2 --version
+Idris 2, version 0.6.0-dc1b5387b
+vscode ➜ /workspaces/idris2-hello-world $ idris2-lsp --version
+Idris2 LSP: 0.1.0-7fa662a2a
+Idris2 API: 0.6.0-dc1b5387b
 ```
 
 To build and run `hello.idr` in command line, just type:
 
 ```
-root ➜ /workspaces/idris2-hello-world (main ✗) $ idris2 hello.idr -o hello
-root ➜ /workspaces/idris2-hello-world (main ✗) $ ./build/exec/hello
+vscode ➜ /workspaces/idris2-hello-world $ idris2 hello.idr -o hello
+vscode ➜ /workspaces/idris2-hello-world $ ./build/exec/hello
 Hello Idris World!
 ```
 
 Or run inside Idris REPL:
 
 ```
-root ➜ /workspaces/idris2-hello-world (main ✗) $ idris2 hello.idr
+vscode ➜ /workspaces/idris2-hello-world $ idris2 hello.idr
      ____    __     _         ___
     /  _/___/ /____(_)____   |__ \
-    / // __  / ___/ / ___/   __/ /     Version 0.5.1-a4b99bd81
+    / // __  / ___/ / ___/   __/ /     Version 0.6.0-dc1b5387b
   _/ // /_/ / /  / (__  )   / __/      https://www.idris-lang.org
  /___/\__,_/_/  /_/____/   /____/      Type :? for help
 
@@ -60,3 +60,5 @@ Main>
 **Notes**
 
 The Idris2 version installed is the [submodule under idris2-lsp](https://github.com/idris-community/idris2-lsp), may not be the latest in [Idris2 repo](https://github.com/idris-lang/Idris2).
+
+Since idris2-lsp is not released yet, right now we build devcontainer image from their main branch.
